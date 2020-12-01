@@ -1,0 +1,52 @@
+Atividade 1
+
+ Explique com suas palavras e cite exemplos utilizando no mínimo 2 linhas para cada alternativa.
+
+a- Select
+serve para nos mostrar as tabelas armazenadas dentro de nosso banco de dados do qual podemos selecionar se queremos todos os dados da tabela ou algum dado específico. 
+	EX: select (podemos colocar quais colunas queremos ou com “*” para dizer que quer todos) from nome da tabela que desejamos
+
+select * from tb_alunes
+
+b- Insert
+insert serve para popularmmos nossa tabela com os dados desejados pelo usuário 
+insert into nome da tabela (atributos que serão passados) values(valores desejados)
+insert into tb_alunes (nome, telefone, sala) values(“Bruno Santos”, “1999999-9999”, ‘“turma 13”
+
+c- Update
+comando utilizado para atualizar algum dado dentro de nosso banco de dados, por exemplo quando temos um banco de dados de cadastro que pede nome de uma pessoa ,cpf e número para contato e a pessoa não possui o número podemos adicionar o número depois de adicionar no banco de dados
+update nome da tabela set atributos e seus novos valores where id = id desejado
+update tb_alunes set telefone = “19999999991”
+
+d- Delete
+delete serve para deletar algum dado dentro de nossa tabela, talvez em nossa tabela alunos tenhamos um aluno que trocou de escola e precisamos de remove-lo da tabela de alunos matriculados usamos o delete.
+delete from tb_alunes where id = id requerido 
+
+
+e- Create Table
+create table serve para como já diz o nome criar uma tabela dentro de um banco de dados, por exemplo se queremos uma tabela com os alunos com notas vermelhas usamos esse comando 
+create table alunosAbaixoDaMedia;
+
+f- Drop Table
+drop table serve para excluir toda a tabela (fique atento ao usar esse comando) pois se não tiver um backup pode se gerar uma dor de cabeça um pouco grande 
+ex: drop table alunosAbaixoDaMedia;
+
+g- Alter Table
+esse comando serve para modificarmos os atributos de nossa tabela adicionarmos ou removermos atributos por exemplo se queremos adicionar o estado de matricula de nosso aluno podemos adicionar. 
+ex: alter table nome da tabela verbo nome da coluna tipo de dados ;
+alter table tb_alunes add matricula boolean; 
+
+
+Atividade 2
+
+Informe pelo menos 5 tipagens utilizadas no Mysql e diga a sua equivalência em Java (ex: varchar = String)
+
+int = int __________________________________
+
+float = float__________________________________
+
+boolean = boolean__________________________________
+
+double = double __________________________________
+
+bigint = long__________________________________
